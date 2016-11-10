@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module name="Product" label="商品" version="" package="com.efeiyi.ec.product.model.Product" path="">
+
+    <entities>
+
+        <entity name="Advertisement" label="广告"  model="com.efeiyi.ec.product.model.Advertisement">
+            <does>
+                <do name="listAdvertisement" access="" label="商品列表">
+                    <query name="default" label="默认" type="auto" orderBy="adsOrder:desc">
+                        <condition name="groupName" defaultValue="xhBanner_Center" operation="eq"/>
+                        <condition name="status" defaultValue="1" operation="eq"/>
+                    </query>
+                    <query name="default2" label="默认" type="auto" orderBy="adsOrder:desc">
+                        <condition name="groupName" defaultValue="xhBanner_Right" operation="eq"/>
+                        <condition name="status" defaultValue="1" operation="eq"/>
+                    </query>
+                    <query name="default3" label="默认" type="auto" orderBy="adsOrder:desc">
+                        <condition name="groupName" defaultValue="rmsp" operation="eq" inputType="default"/>
+                        <condition name="status" defaultValue="1" operation="eq"/>
+                    </query>
+
+                </do>
+            </does>
+        </entity>
+
+    </entities>
+</module>

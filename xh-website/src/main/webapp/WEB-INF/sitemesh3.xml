@@ -1,0 +1,24 @@
+<sitemesh>
+    <mapping path="/WEB-INF/jsp/wap/home/home.jsp" decorator=""/>
+    <mapping path="/wap/*" exclue="false"/>
+    <mapping path="/WEB-INF/jsp/wap/*" exclue="false"/>
+    <mapping path="/init/**" exclue="false"/>
+    <mapping path="/init/**" decorator="/layouts/secondary.jsp"/>
+    <!--<mapping path="/**" decorator="/layouts/main.jsp"/>-->
+    <mapping path="/news*" decorator="/layouts/secondary.jsp"/>
+    <mapping path="/association/*.do" decorator="/layouts/main.jsp"/>
+    <mapping path="/project/*.do" decorator="/layouts/secondary.jsp"/>
+    <mapping path="/organization/*.do" decorator="/layouts/secondary.jsp"/>
+    <mapping path="/protection/*.do" decorator="/layouts/secondary.jsp"/>
+    <mapping path="/view/*.do" decorator="/layouts/secondary.jsp"/>
+    <mapping path="/member/*.do" decorator="/layouts/secondary.jsp"/>
+    <mapping path="/WEB-INF/jsp/500.jsp" decorator="/layouts/secondary.jsp"/>
+    <mapping path="/project/project.home.list.do"  exclue="true"/>
+    <mapping path="/home/homeMaster.do"  exclue="true"/>
+
+    <mapping path="/WEB-INF/jsp/wap/home/home.jsp" exclue="false"/>
+    <mapping path="/news/search.do"  decorator="/layouts/secondary.jsp"/>
+
+
+    <!--<mapping path="/web/websiteStatement.do"  decorator="/layouts/secondary.jsp"/>-->
+</sitemesh>
